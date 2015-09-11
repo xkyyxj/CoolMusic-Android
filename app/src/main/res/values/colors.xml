@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="header_color">#5cb487</color>
+    <color name="play_bar_color">#5cb487</color>
+
+    <color name="play_seek_bar_bg">#ffffff</color>
+    <color name="play_seek_bar_secondary_progress">#aaaaaa</color>
+    <color name="cm_seekbar_progress">#3c0125</color>
+
+</resources>

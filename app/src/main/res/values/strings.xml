@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CoolMusic</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="header_return_text">返回</string>
+    <string name="header_config_text">设置</string>
+
+    <string name="local_music_title">本地音乐</string>
+</resources>

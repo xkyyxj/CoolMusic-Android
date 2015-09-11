@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/activity_local_music_header"
+        layout="@layout/header"/>
+
+    <include
+        android:id="@+id/activity_local_music_play_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/playing_bar"/>
+
+    <ListView
+        android:id="@+id/music_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_local_music_header"
+        android:layout_above="@id/activity_local_music_play_bar"/>
+
+</RelativeLayout>

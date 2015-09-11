@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- String Array -->
+    <string-array name="music_cricle_way">
+        <item>单曲循环</item>
+        <item>列表循环</item>
+        <item>随机播放</item>
+    </string-array>
+
+</resources>
