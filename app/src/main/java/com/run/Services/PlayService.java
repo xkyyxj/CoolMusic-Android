@@ -32,7 +32,7 @@ public class PlayService {
         });
     }
 
-    /*
+    /**
     * 播放音乐
     *
     * @param filePathString 播放音乐文件地址

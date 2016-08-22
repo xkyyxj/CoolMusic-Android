@@ -16,7 +16,7 @@ public class MusicListOperation {
 
     private static int nextMusicPosition;
 
-    /*
+    /**
     * 在传入的参数列表当中选择下一首音乐,通过choice选项决定选择规则
     * 或许将来返回类型以及参数要有变动的，当有网络音乐播放功能的时候
     * 应当面向抽象编程
@@ -41,7 +41,9 @@ public class MusicListOperation {
                 return null;
         }
     }
-
+    /**
+     * 用于通过列表循环的方式获取需要播放的下一首音乐
+     * */
     private static LocalMusic getNextByListCircle(int currentPosition, List<LocalMusic> _list) {
         int listLength = _list.size();
         int nextPosition = (currentPosition + 1) % listLength;
@@ -49,6 +51,9 @@ public class MusicListOperation {
         return _list.get(nextPosition);
     }
 
+    /**
+     * 用于通过随机选的方式获取需要播放的下一首音乐
+     * */
     private static LocalMusic getNextByRandom(List<LocalMusic> _list) {
         Random random = new Random();
         int nextPosition = random.nextInt(_list.size());
@@ -56,6 +61,9 @@ public class MusicListOperation {
         return _list.get(nextPosition);
     }
 
+    /**
+     * 继续播放当前音乐
+     * */
     private static LocalMusic getNextBySingle(int position, List<LocalMusic> _list){
         nextMusicPosition = position;
         return _list.get(position);
